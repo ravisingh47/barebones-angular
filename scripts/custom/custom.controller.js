@@ -1,6 +1,11 @@
-define(['./module'], function(module) {
-	'use strict';
+angular.module("custom").controller('CustomController', function($scope, CustomService) {
+	$scope.data = {};
 
-	module.controller('CustomController', ['$scope', function($scope) {
-	}]);
-}); 
+	$scope.initialize = function() {
+		CustomService.exampleGET().then(function(response) {
+			$scope.data = response.data;
+		});
+	};
+
+	$scope.initialize();
+});

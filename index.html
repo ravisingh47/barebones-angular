@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="custom">
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,12 +7,33 @@
 
 	<title>Barebones</title>
 
-	<link rel="stylesheet" type="text/css" href="scripts/vendor/css/angular-material.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.css">
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.layouts.css">
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-aria.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.js"></script>
+	
 	<link rel="stylesheet" type="text/css" href="scripts/custom/css/main.css">
+	<script type="text/javascript" src="scripts/app.js"></script>
+	<script type="text/javascript" src="scripts/custom/custom.controller.js"></script>
+	<script type="text/javascript" src="scripts/custom/custom.service.js"></script>
+	<script type="text/javascript" src="scripts/custom/routes.js"></script>
 </head>
 <body layout="row">
 	<md-content ng-view md-scroll-y flex class="md-default-theme md-padding"></md-content>
 
-	<script type="text/javascript" data-main="scripts/main" src="scripts/vendor/js/require.js"></script>
+	<script type="text/ng-template" id="scripts/custom/custom.tpl.html">
+		<span>
+			<md-card>
+				<md-card-content>
+					<div ng-repeat="(key,value) in data.headers">
+						{{key}}={{value}}
+					</div>
+				</md-card-content>
+			</md-card>
+		</span>
+	</script>
 </body>
 </html>

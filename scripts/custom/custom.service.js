@@ -1,6 +1,15 @@
-define(['./module'], function(module) {
-	'use strict';
+angular.module("custom").service('CustomService', function($http) {
+	this.exampleGET = function(query) {
+		var params = {
+			q: query
+		};
 
-	module.service('CustomService', [function() {
-	}]);
+		var path = 'http://httpbin.org/get';
+
+		return $http({
+			method: 'GET',
+			url: path,
+			params: params
+		});
+	};
 });
