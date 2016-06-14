@@ -9,11 +9,16 @@
 
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.layouts.css">
+	
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-aria.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.js"></script>
+	
+	<script type="text/javascript" src="https://cdn.rawgit.com/igorlino/angular-elevatezoom-plus/1.1.18d/js/angular-ezplus.js"></script>
 	
 	<link rel="stylesheet" type="text/css" href="scripts/custom/css/main.css">
 	<script type="text/javascript" src="scripts/app.js"></script>
@@ -34,6 +39,17 @@
 				</md-card-content>
 			</md-card>
 		</span>
+		<img
+			ez-plus
+			ezp-model="{
+				thumb: 'http://res.cloudinary.com/boarnoah/image/upload/v1460593768/logoBoarnoah_j2s0k8.png',
+				small: 'http://res.cloudinary.com/boarnoah/image/upload/v1460593768/logoBoarnoah_j2s0k8.png',
+				large: 'http://res.cloudinary.com/boarnoah/image/upload/v1460593768/logoBoarnoah_j2s0k8.png'
+			}"
+			ezp-options="{scrollZoom: true, easing: true}"
+			id="zoom_01"
+			src="http://res.cloudinary.com/boarnoah/image/upload/v1460593768/logoBoarnoah_j2s0k8.png"
+		></img>
 	</script>
 </body>
 </html>

@@ -1,6 +1,7 @@
 angular.module('custom', [
 	'ngMaterial',
-	'custom.routes'])
+	'custom.routes',
+    'ezplus'])
 .config(function() {
 	console.log("App initialized");
 });
