@@ -6,14 +6,15 @@
 	<meta name="description" content="">
 
 	<title>Barebones</title>
-
-	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.layouts.css">
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-route.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-aria.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.8/angular-animate.js"></script>
-	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.0.2/angular-material.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-route.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-aria.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.7/angular-animate.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-touch/1.5.7/angular-touch.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/1.3.3/ui-bootstrap-tpls.js"></script>
+	
 	
 	<link rel="stylesheet" type="text/css" href="scripts/custom/css/main.css">
 	<script type="text/javascript" src="scripts/app.js"></script>
@@ -25,15 +26,20 @@
 	<md-content ng-view md-scroll-y flex class="md-default-theme md-padding"></md-content>
 
 	<script type="text/ng-template" id="scripts/custom/custom.tpl.html">
-		<span>
-			<md-card>
-				<md-card-content>
-					<div ng-repeat="(key,value) in data.headers">
-						{{key}}={{value}}
-					</div>
-				</md-card-content>
-			</md-card>
-		</span>
+		<uib-carousel timeout="1000">
+			<uib-slide>
+				<img src="http://res.cloudinary.com/boarnoah/image/upload/v1465259516/emseers_mockup_png_1_jhmfd6.png">
+				<div>
+					TEST1
+				</div>
+			</uib-slide>
+			<uib-slide>
+				<img src="http://res.cloudinary.com/boarnoah/image/upload/v1465259502/adipa_mockup_png_1_t6g3aq.png">
+				<div>
+					TEST2
+				</div>
+			</uib-slide>
+		</uib-carousel>
 	</script>
 </body>
 </html>
